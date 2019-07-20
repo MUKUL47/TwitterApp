@@ -6,11 +6,13 @@
             <%if(message.length>0){%>
             <table border="1"> 
             <tr>
+            <th>No</th>
             <th>Tweet</th>
             <th>Date</th>
             </tr>
-            <%message.forEach((data)=>{%>  
+            <%message.forEach((data,index)=>{%>  
                 <tr>
+                <th><%=index+1%></th>
                 <th><h3><%=data.full_text%></h3></th>
                 <th><h3><%=data.created_at%></h3></th>
                 </tr>                
