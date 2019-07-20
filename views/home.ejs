@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <title>HOME</title>
+    <body>
+        <center>
+                <h1>Welcome to twitterApp</h1>
+                <h3>Enter #hashtag(#india, #football) or @userName (@__yourNamee)</h3>
+</br> <form action="/getTweets" method="post" >
+                <input type="text" required placeholder="#hashtag/ @userName" name="name">
+                <br></br>
+                <input type="submit" value="Search tweet[s]">
+            </form>
+            <%if(err){%>
+                <h2>Invalid hashtag or username</h2>
+                <%}%>
+        </center>
+    </body>
+</html>

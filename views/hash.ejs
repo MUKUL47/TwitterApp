@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <title>HASH</title>
+    <body><center>
+            <h1>#<%=hash%></h1>
+            <%if(message.length>0){%>
+            <table border="1"> 
+            <tr>
+            <th>Tweet</th>
+            <th>Date</th>
+            </tr>
+            <%message.forEach((data)=>{%>  
+                <tr>
+                <th><h3><%=data.full_text%></h3></th>
+                <th><h3><%=data.created_at%></h3></th>
+                </tr>                
+            <%})            
+        }else{%>
+            <h3>No tweet[s] found</h3>
+            <%}%>   
+    </table>   
+        </center>
+    </body>
+</html>

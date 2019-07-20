@@ -1,0 +1,26 @@
+{
+  "name": "twitter-api-getusertweets-hashtag",
+  "version": "1.0.0",
+  "description": "To retrieve real time tweets/ data from twitter",
+  "main": "app.js",
+  "scripts": {
+    "run": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MUKUL47/Twitter-App.git"
+  },
+  "author": "mukul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MUKUL47/Twitter-App/issues"
+  },
+  "homepage": "https://github.com/MUKUL47/Twitter-App#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.0.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "twit": "^2.2.11"
+  }
+}
