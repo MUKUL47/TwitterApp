@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <title>USER</title>
+    <body><center>
+            <h1><%=name%></h1>
+            <%if(message.length>0){%>
+            <table border="1"> 
+            <tr>
+            <th>No</th>
+            <th>Tweet</th>
+            <th>Date</th>
+            </tr>
+            <%message.forEach((data,i)=>{%>  
+                <tr>
+                <th><%=i+1%></th>
+                <th><h3><%=data.full_text%></h3></th>
+                <th><h3><%=data.created_at%></h3></th>
+                </tr>                
+            <%})            
+        }else{%>
+            <h3>No tweet[s] found</h3>
+            <%}%>   
+    </table>   
+        </center>
+    </body>
+</html>
