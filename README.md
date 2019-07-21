@@ -94,6 +94,6 @@ are specific hashTag and tweet_mode extended to retreive any truncated tweets su
             </tr>
             <tr>
             <th><a href="https://imgflip.com/gif/3661lp"><img src="https://i.imgflip.com/3661lp.gif" title="made at imgflip.com"/></a></th>
-            <th><a href="https://imgflip.com/gif/3661mo"><img src="https://i.imgflip.com/3661mo.gif" title="made at imgflip.com"/></a></th>
+            <th><a href="https://imgflip.com/gif/3661pe"><img src="https://i.imgflip.com/3661pe.gif" title="made at imgflip.com"/></a></th>
             </tr>
  </table>
