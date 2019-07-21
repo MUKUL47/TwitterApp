@@ -76,7 +76,7 @@ are specific hashTag and tweet_mode extended to retreive any truncated tweets su
             </tr>
  </table>
  
- <h4>Username /h/{hashTag}</h4>
+ <h4>Hashtag /h/{hashTag}</h4>
  <table> 
             <tr>
             <th>Tweet from main twitter app</th>
