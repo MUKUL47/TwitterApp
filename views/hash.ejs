@@ -22,8 +22,25 @@
         }else{%>
             <!-- If Data is empty  -->
             <h3>No tweet[s] found</h3>
-            <%}%>   
+            <%}%>
+            <h3 id="seconds"></h3>  
     </table>   
         </center>
+        
     </body>
+    <script>
+         // This function will refresh page every 5 seconds 
+        //working : taking seconds parameter 5 then recursively calling every second then passing seconds-1 unless seconds >0
+        function refresh(seconds){            
+            setTimeout(()=>{
+                if( seconds > 0 ){
+                    document.getElementById("seconds").innerHTML = `Fetching new tweets[s] in ${seconds} seconds`;
+                    refresh(seconds-1)
+                }else{                    
+                    location.reload()
+                }
+            },1000)
+        }        
+        refresh(5)
+    </script>
 </html>
