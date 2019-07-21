@@ -38,10 +38,10 @@ const express = require('express')
       })
 
       //default routes for #hash and @username
-
+      
       router.get("/u/:username",routes.getUser)
 
-      router.get("/h/hashTag",routes.getHashTag)     
+      router.get("/h/:hashTag",routes.getHashTag)     
       
 
 router.listen(1000)

@@ -1,6 +1,6 @@
 /**
- * getHashTagInfo will take 
- * @param request of hashTag and will return a promise if resolve then render the data else catch the error
+ * getUser will take 
+ * @param request of @username and will return a promise if resolve then render the data else catch the error
  */
 module.exports.getUser = (req,res)=>{ 
     getUserTimeLine(req.params.username)
@@ -9,6 +9,10 @@ module.exports.getUser = (req,res)=>{
     .catch((err)=> res.render("user.ejs",{message : err})        
     ) 
 }
+/**
+ * getHashTagInfo will take 
+ * @param request of #hashTag and will return a promise if resolve then render the data else catch the error
+ */
 module.exports.getHashTag = (req,res)=>{ 
     getHashTagInfo(req.params.hashTag)
     .then((msg)=>  res.render("hash.ejs",{message : msg.data.statuses, hash :req.params.hashTag })
@@ -21,11 +25,14 @@ module.exports.getHashTag = (req,res)=>{
  * From twitterSdk file import pre-defined method of "twit module" containing requests. Will be inturn returns a promise 
  * @params q:hashTag, tweet_mode : extended (to retreive truncated tweets)
  */
-
 function getHashTagInfo(hashTag){ 
     return twitter.config.get('search/tweets', { q: `#${hashTag}`, tweet_mode : "extended" }) 
 }
 
+/**
+ * From twitterSdk file import pre-defined method of "twit module" containing requests. Will be inturn returns a promise 
+ * @params screen_name:username, tweet_mode : extended (to retreive truncated tweets)
+ */
 function getUserTimeLine(username){
     return twitter.config.get('statuses/user_timeline',  { screen_name: `${username}`,  tweet_mode : "extended"})
 }
