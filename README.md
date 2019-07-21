@@ -76,6 +76,7 @@ are specific hashTag and tweet_mode extended to retreive any truncated tweets su
             </tr>
  </table>
  
+ <h4>Username /h/{hashTag}</h4>
  <table> 
             <tr>
             <th>Tweet from main twitter app</th>
@@ -88,7 +89,7 @@ are specific hashTag and tweet_mode extended to retreive any truncated tweets su
  </table>
  
  <h4>Real time example</h4>
- Takes approximately 10-15 seconds after tweeting from mail app.
+ Takes approximately 10-15 seconds after tweeting from main app.
  <table> 
             <tr>
             <th>Before tweeting</th>
