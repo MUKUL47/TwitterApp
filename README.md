@@ -2,7 +2,9 @@
 <h1><b><u>Summary</u></b></h1> 
 <h4>Retreive #hashtag and @userName tweets sorted in recency</h4>
 <h4>node_modules</h4>
-express     : to automate request and response
+express     : To automate request and response
+<br>
+dotenv : To store api keys in nodeJs environmental variable as process.env.variableName, which will prevent exposing on git.
 <br>
 body-parser : convert/pass encoded data from post on to req.body
 <br>
