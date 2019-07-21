@@ -84,3 +84,7 @@ are specific hashTag and tweet_mode extended to retreive any truncated tweets su
             <th><a href="https://imgflip.com/gif/3660yb"><img src="https://i.imgflip.com/3660yb.gif" title="made at imgflip.com"/></a></th>
             </tr>
  </table>
+ 
+ <h4>Real time example</h4>
+ Takes approximately 10-15 seconds after tweeting from mail app.
+ <a href="https://imgflip.com/gif/3661ca"><img src="https://i.imgflip.com/3661ca.gif" title="made at imgflip.com"/></a>
