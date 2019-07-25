@@ -29,7 +29,7 @@ these keys will be used by twit everytime an api request has been made which wil
 <ul>
 <li>/getTweets (POST) this request will have either "@userName" or "#hashTag" and will determine which route will be selected next.</li>
 <li>/h/{hashTag} (GET) this request will envoked from /getTweets if #hashTag, and will fetch recent tweets having #hashTag in it.</li>
-<li>/h/{userName} (GET) this request will envoked from /getTweets if @userName, and will fetch all activities of @userName by recency.</li>
+<li>/u/{userName} (GET) this request will envoked from /getTweets if @userName, and will fetch all activities of @userName by recency.</li>
 </ul>
 
 <h3>Client side (views/*.ejs)</h3>
@@ -73,7 +73,7 @@ are specific hashTag and tweet_mode extended to retreive any truncated tweets su
             <tr>
             <th><a href="https://imgflip.com/gif/3660x4"><img src="https://i.imgflip.com/3660x4.gif" title="made at imgflip.com"/></a></th>
             <th><a href="https://imgflip.com/gif/3660w6"><img src="https://i.imgflip.com/3660w6.gif" title="made at imgflip.com"/></a></th>
-            </tr>
+            </tr>.
  </table>
  
  <h4>Hashtag /h/{hashTag}</h4>
